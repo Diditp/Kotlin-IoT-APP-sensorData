@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "694348825724",
+    "firebase_url": "https://latihan-15-iot-default-rtdb.firebaseio.com",
+    "project_id": "latihan-15-iot",
+    "storage_bucket": "latihan-15-iot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694348825724:android:8a6333f217827cf81575f9",
+        "android_client_info": {
+          "package_name": "com.example.latihanandorid6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694348825724-543l5e8do8gnfpsmf4q9itu9kf2v1fsq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq2UEnfFVjN3CJmZxsU-J00xNiQL9WoVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694348825724-543l5e8do8gnfpsmf4q9itu9kf2v1fsq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

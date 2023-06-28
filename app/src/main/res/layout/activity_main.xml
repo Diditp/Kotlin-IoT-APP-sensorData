@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27374D"
+    android:backgroundTint="#27374D"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+ <TextView
+     android:id="@+id/judul"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="SENSOR DATA"
+     android:textColor="#DDE6ED"
+     android:textSize="30dp"
+     android:textStyle="bold"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.497"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <LinearLayout
+     android:id="@+id/lyCard1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="30dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/judul">
+
+  <!--    CARD VIEW SENSOR LDR -->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardViewKecerahan"
+      android:layout_width="150dp"
+      android:layout_height="100dp"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="#025464">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvKecerahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KECERAHAN"
+        android:textColor="#DDE6ED"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvDataKecerahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="255 Lux"
+        android:textColor="#DDE6ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <!--    CARD VIEW SENSOR PROXIMITY -->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardViewProximity"
+      android:layout_width="150dp"
+      android:layout_height="100dp"
+      android:layout_marginLeft="35dp"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="#E57C23">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvProximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROXIMITY"
+        android:textColor="#DDE6ED"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvDataProximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="false"
+        android:textColor="#DDE6ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:id="@+id/lyCard2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="35dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/lyCard1">
+
+  <!--    CARD VIEW SENSOR ULTRASONIC -->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardViewUltrasonic"
+      android:layout_width="150dp"
+      android:layout_height="100dp"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="#40128B">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvUltrasonic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ULTRASONIC"
+        android:textColor="#DDE6ED"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvDataUltrasonic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="255 Cm"
+        android:textColor="#DDE6ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <!--    CARD VIEW SENSOR PIR-->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardViewPIR"
+      android:layout_width="150dp"
+      android:layout_height="100dp"
+      android:layout_marginLeft="35dp"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="#9336B4">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvPIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIR"
+        android:textColor="#DDE6ED"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvDataPIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="false"
+        android:textColor="#DDE6ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+ </LinearLayout>
+
+ <Button
+     android:id="@+id/btnNextScreen"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="35dp"
+     android:backgroundTint="#526D82"
+     android:textColor="#DDE6ED"
+     android:text="VIEW CHART"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/lyCard2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
